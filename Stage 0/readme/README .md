@@ -5,11 +5,13 @@
 
 ## Code Link
 Python: (https://github.com/sanzidaanee/hackbio-biocoding-internship/blob/main/Stage%200/Code/stage_0_task.ipynb)
+
 R: (https://github.com/sanzidaanee/hackbio-biocoding-internship/blob/main/Stage%200/Code/stage0_task.Rmd)
 
 ## Video link
 
 Python:
+
 R: 
 
 ## Task
