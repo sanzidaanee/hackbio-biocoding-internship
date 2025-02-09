@@ -12,7 +12,8 @@ R: (https://github.com/sanzidaanee/hackbio-biocoding-internship/blob/main/Stage%
 
 Python: (https://www.linkedin.com/posts/kazadi-ngoie-45a5901b2_as-part-of-the-hackbio-internship-stage-0-activity-7293876038374232065-3Z4_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEXKz9wBmY1XWjb07w6g6X3WGgC7RxsWH5A)
 
-R: 
+
+R: (https://www.linkedin.com/posts/bezaleel-akinbami-33a812168_for-the-hackbio-internship-biocoded-stage-activity-7294095504387260416-CVPV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEXKz9wBmY1XWjb07w6g6X3WGgC7RxsWH5A)
 
 ## Task
 
