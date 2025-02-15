@@ -27,7 +27,6 @@ Stationary Phase: Growth slows as the population reaches the carrying capacity, 
 Death Phase: Population declines as the environment becomes depleted of nutrients and waste products accumulate, leading to cell death exceeding new cell production. 
 
 
-
 ### The microbial logistic growth curve equation is typically represented as: 
 
 dN/dt = rN((K - N)/K)
@@ -37,7 +36,7 @@ where "dN/dt" represents the rate of population change
 "r" is the intrinsic growth rate, and 
 "K" is the carrying capacity (the maximum population size the environment can support). 
 
-# Hamming Distance
+## Hamming Distance
 
 Hamming distance between two strings or vectors of equal length is the number of positions at which the corresponding symbols are different. In other words, it measures the minimum number of substitutions required to change one string into the other, or equivalently, the minimum number of errors that could have transformed one string into the other. In a more general context, the Hamming distance is one of several string metrics for measuring the edit distance between two sequences.
 
