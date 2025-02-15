@@ -1,100 +1,47 @@
 
-# Topics: Coding Syntax, Data types, and Data Structures
+# Topics: Functions
 
 @Slack: @Sanzida, @ Bez, @Tatiene,  @Hana, @Onyinye
+
+Code Link: https://github.com/sanzidaanee/hackbio-biocoding-internship/blob/main/Stage1/Code/Stage1_task.ipynb
 
 
 ## Task
 
-In stage 0 the task is to organize the following information of the team members (names, slack names, emails, hobbies, countries, discipline, and preferred programming languages) using a simple data structure using R or Python.
+In stage 1 the task is to write functions for different biological events.
 
-## Dictionaries in Python
+## Logistic Growth Curve
 
-A dictionary is a data structure that stores the data values in key-value pairs. The values can be repeated and used in any type of data, whereas the key represents a specific piece of information like an email or name and cannot be repeated and must be used with immutable data types like strings, integers, and tuples. The values are accessed using the keys. Dictionaries are written with curly brackets.
+A graphical representation of the growth pattern of a microbial population over time, typically showing an S-shaped curve with distinct phases including a lag phase, exponential (log) phase, stationary phase, and death phase, where the growth rate initially accelerates rapidly, then slows down and eventually stabilizes as the population reaches its carrying capacity due to limited resources in the environment; essentially depicting the typical "sigmoid" growth pattern observed in many biological populations. 
 
-When we input multiple values, we can store them as a list within the dictionary.
+#### Key points about the microbial logistic growth curve:
 
-## How to Create a Dictionary
+Phases:
 
-A dictionary can be created by placing an order of elements within curly braces {} and separated by a comma.
+Lag Phase: The initial period is when the microbial population adapts to the new environment, not actively dividing but metabolically active. 
 
-## Nested Dictionary
+Exponential (Log) Phase: Rapid cell division occurs at a constant rate, resulting in a logarithmic increase in population size. 
 
-A nested dictionary means putting a dictionary inside another dictionary. To input all the information for the group of people together, we will create a nested dictionary. Nested dictionaries can be created by placing comma-separated dictionaries enclosed with braces.
+Stationary Phase: Growth slows as the population reaches the carrying capacity, with the number of dying cells balancing out the number of new cells. 
 
-
-
-
+Death Phase: Population declines as the environment becomes depleted of nutrients and waste products accumulate, leading to cell death exceeding new cell production. 
 
 
 
-### Create Dictionary for Group Information
+### The microbial logistic growth curve equation is typically represented as: 
 
-```bash
-  team_info= [
-    {
-        "Name": "Kazadi Ngoie",
-        "Slack Username": "@Tatiene",
-        "Email": "tatianangoie17@gmail.com",
-        "Hobby": "Gaming",
-        "Country": "South Africa",
-        "Discipline": "Bioinformatics",
-        "Preferred Language": "Python"
-    },
-    {
-        "Name": "Bezaleel Akinbami",
-        "Slack Username": "@Bez",
-        "Email": "bezaleelakinbami16@gmail.com",
-        "Hobby": "Gaming",
-        "Country": "Nigeria",
-        "Discipline": "Bioinformatics ",
-        "Preferred Language": "R"
-    },
-    {
-        "Name": "Hana Nadir",
-        "Slack Username": "@Hana",
-        "Email": "hananadir04@gmail.com",
-        "Hobby": "Reading",
-        "Country": "Sudan",
-        "Discipline": "Medecinal chemistery and drug discovery",
-        "Preferred Language": "Python"
-    },
-    {
-        "Name": "Onyinye Maryrose Ugwu ",
-        "Slack Username": "@Onyinye",
-        "Email": "monyinye80@gmail.com",
-        "Hobby": "Travelling",
-        "Country": "Nigeria",
-        "Discipline": "Zoology",
-        "Preferred Language": "Python"
-    },
-    {
-        "Name": "Sanzida Akhter Anee",
-        "Slack Username": "@Sanzida",
-        "Email": "aneesanzidaakhter@gmail.com",
-        "Hobby": "Blogging",
-        "Country": "Bangladesh",
-        "Discipline": "Bioinformatics",
-        "Preferred Language": "Python"
-    }
-]
-```
+dN/dt = rN((K - N)/K)
 
-### Print Information in Structured way
+where "dN/dt" represents the rate of population change
+"N" is the population size at a given time
+"r" is the intrinsic growth rate, and 
+"K" is the carrying capacity (the maximum population size the environment can support). 
 
-```bash
-  print("Team Members Information:\n")
+# Hamming Distance
 
-for member in team_info:
-    print(f"Name: {member['Name']}")
-    print(f"Slack Username: {member['Slack Username']}")
-    print(f"Email: {member['Email']}")
-    print(f"Hobby: {member['Hobby']}")
-    print(f"Country: {member['Country']}")
-    print(f"Discipline: {member['Discipline']}")
-    print(f"Preferred Language: {member['Preferred Language']}")
-    print("-" * 40)  # Separator for better readability
+Hamming distance between two strings or vectors of equal length is the number of positions at which the corresponding symbols are different. In other words, it measures the minimum number of substitutions required to change one string into the other, or equivalently, the minimum number of errors that could have transformed one string into the other. In a more general context, the Hamming distance is one of several string metrics for measuring the edit distance between two sequences.
 
-```
+
+
 
 
