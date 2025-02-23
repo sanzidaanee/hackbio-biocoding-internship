@@ -10,7 +10,8 @@ Github rep for stage 2:
 
 R code: https://github.com/sanzidaanee/hackbio-biocoding-internship/blob/main/Stage2/Code/transcriptomics.Rmd
 
-Video post:
+Video post: https://x.com/anee_sanzida/status/1893660823114932380
+
 
 
 # Introduction
