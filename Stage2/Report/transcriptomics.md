@@ -30,6 +30,15 @@ This is a processed RNAseq dataset with quantitated gene expression data from an
 DEGs were identified using a t-statistical test, setting a significance level of 1%. The log2 fold change (FC) was calculated with cutoff 1 and >1 for upregulation and < -1 for downregulation.
 From this analysis, 1 upregulated genes and 4 downregulated genes were extracted from a raw extracted dataset.
 
+### Upregulated gene list
+
+![uregulated gene](https://github.com/user-attachments/assets/6960db8e-f3c0-417d-b987-62777d7fae92)
+
+
+### Downregulated gene list
+![downregulated gene](https://github.com/user-attachments/assets/543e4ef1-b5ad-4320-9b72-1c53407ca958)
+
+
 A volcano plot was created to visualize these results, showing how highly differentially genes were expressed based on fold changes and p values. So, the volcano plot would show genes up-regulated on the right side, while those down-regulated in the cancer state appear on the left side.
 
 ![000018](https://github.com/user-attachments/assets/04a502cc-4b71-4841-9fe6-30b474d34c6f)
@@ -40,10 +49,6 @@ Figure 1: Volcano plot of low-grade gliomas (LGG) dataset visualizes gene expres
 # Gene Function
 
 The selected upregulated and downregulated genes based on the cut-off values of log fold change and p-value, are annotated from the GeneCards database to identify their functions [2].
-
-# Gene Function
-
-The selected upregulated and downregulated genes based on the cut-off values of log fold change and p-value, are annotated from the GeneCards database to identify their functions.
 
 ## Upregulated gene
 
