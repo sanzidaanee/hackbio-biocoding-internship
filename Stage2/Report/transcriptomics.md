@@ -21,7 +21,7 @@ Differential expression analysis is a fundamental technique used to identify cha
 # Dataset
 This is a processed RNAseq dataset with quantitated gene expression data from an RNA-seq experiment, that contains an experiment between a diseased cell line and diseased cell lines treated with compounds. 
 
-## Link:
+## Dataset Link: https://github.com/sanzidaanee/hackbio-biocoding-internship/blob/main/Stage2/Data/transcriptomics%20data.csv
 
 # Results and Visualization
 
