@@ -1,13 +1,19 @@
 # Biochemistry & Oncology: Analyzing Impact of Mutations on Protein Structure and Function
+ @Slack, @Hana
 
 This repository contains a Python notebook (`Biochemistry_task_(2_4).ipynb`) that analyzes the impact of amino acid mutations on protein structure and function, based on SIFT and FoldX scores.
 
+### Link code: https://github.com/sanzidaanee/hackbio-biocoding-internship/blob/main/Stage2/Code/Biochemistry_task_(2_4).ipynb
+
+
 ## Task Description
 
-The task involved analyzing two datasets:
+### The task involved analyzing two datasets:
 
 * **SIFT Dataset:** Contains scores representing the functional impact of mutations.
 * **FoldX Dataset:** Contains scores representing the structural impact of mutations.
+
+# Link dataset: 
 
 The goal was to:
 
