@@ -5,10 +5,10 @@
 @Slack: @Sanzida 
 
 
-#Link
+# Link
 Github rep for stage 2:
 
-R code:
+R code: https://github.com/sanzidaanee/hackbio-biocoding-internship/blob/main/Stage2/Code/transcriptomics.Rmd
 
 Video post:
 
@@ -31,6 +31,9 @@ DEGs were identified using a t-statistical test, setting a significance level of
 From this analysis, 1 upregulated genes and 4 downregulated genes were extracted from a raw extracted dataset.
 
 A volcano plot was created to visualize these results, showing how highly differentially genes were expressed based on fold changes and p values. So, the volcano plot would show genes up-regulated on the right side, while those down-regulated in the cancer state appear on the left side.
+
+![000018](https://github.com/user-attachments/assets/04a502cc-4b71-4841-9fe6-30b474d34c6f)
+
 
 
 # Gene Function
