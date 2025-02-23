@@ -13,7 +13,8 @@ This repository contains a Python notebook (`Biochemistry_task_(2_4).ipynb`) tha
 * **SIFT Dataset:** Contains scores representing the functional impact of mutations.
 * **FoldX Dataset:** Contains scores representing the structural impact of mutations.
 
-# Link dataset: 
+### Link dataset: SIFT- https://github.com/sanzidaanee/hackbio-biocoding-internship/blob/main/Stage2/Data/foldX(2).csv, 
+   FoldX- https://github.com/sanzidaanee/hackbio-biocoding-internship/blob/main/Stage2/Data/foldX(2).csv                  
 
 The goal was to:
 
