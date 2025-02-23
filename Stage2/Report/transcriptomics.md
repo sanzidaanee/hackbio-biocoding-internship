@@ -35,6 +35,7 @@ A volcano plot was created to visualize these results, showing how highly differ
 ![000018](https://github.com/user-attachments/assets/04a502cc-4b71-4841-9fe6-30b474d34c6f)
 
 
+Figure 1: Volcano plot of low-grade gliomas (LGG) dataset visualizes gene expression data. X-axis shows log2-fold change and Y-axis shows adjusted p-value. Red points indicate upregulated and blue dots indicate downregulated genes.
 
 # Gene Function
 
@@ -92,13 +93,9 @@ Gene Ontology (GO) annotations related to this gene include obsolete signal tran
 
 - IFN-induced antiviral protein inhibits the entry of viruses to the host cell cytoplasm, permitting endocytosis, but preventing subsequent viral fusion and release of viral contents into the cytosol.
 - Active against multiple viruses, including influenza A virus, SARS coronaviruses (SARS-CoV and SARS-CoV-2), Marburg virus (MARV), Ebola virus (EBOV), Dengue virus (DNV), West Nile virus (WNV), human immunodeficiency virus type 1 (HIV-1) and hepatitis C virus (HCV) [9].
-
 - Can inhibit: influenza virus hemagglutinin protein-mediated viral entry, MARV and EBOV GP1,2-mediated viral entry, and SARS-CoV and SARS-CoV-2 S protein-mediated viral entry.
-
 - Also implicated in cell adhesion and control of cell growth and migration [10].
-
 - Inhibits SARS-CoV-2 S protein-mediated syncytia formation [11].
-
 - Plays a key role in the antiproliferative action of IFN-gamma either by inhibiting the ERK activation or by arresting cell growth in G1 phase in a p53-dependent manner [2].
 - Acts as a positive regulator of osteoblast differentiation [2.
 - In hepatocytes, IFITM proteins act in a coordinated manner to restrict HCV infection by targeting the endocytosed HCV virion for lysosomal degradation [9].
