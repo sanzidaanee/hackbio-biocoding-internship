@@ -1,0 +1,132 @@
+---
+title: "RNAseq-data analysis"
+author: "Sanzida Akhter Anee"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# Part1: Setup and Installation........
+
+
+## Install and load Required Packages
+
+
+```{r}
+install.packages("dplyr")  # Install dplyr (only needed once)
+library(dplyr)  # Load dplyr
+
+```
+
+
+#Part 2: Data Processing........
+
+##Download data
+
+
+```{r}
+data <- read.csv("/Users/sanzidaakhteranee/Documents/Internship_2025/HackBio Biocoding_2025/Stage 2/Data/transcriptomics data.csv")
+```
+
+
+#Part 3: Data visualization........
+
+
+##Volcano plot
+
+
+```{r}
+# Already have 'results' with logFC and p-values (p.adjust)
+
+
+# Set thresholds for significance
+logFC_cutoff = 1      # Log Fold Change threshold
+pvalue_cutoff = 0.01  # Adjusted p-value threshold
+
+
+# Create a new column to classify significance
+data$threshold <- ifelse(data$log2FoldChange > logFC_cutoff & data$padj < pvalue_cutoff, "Upregulated",
+                    ifelse(data$log2FoldChange < -logFC_cutoff & data$padj < pvalue_cutoff, "Downregulated", "Not Significant"))
+
+
+# Assign colors based on thresholds
+data$color <- ifelse(data$threshold == "Upregulated", "red",
+                        ifelse(data$threshold == "Downregulated", "blue", "gray"))
+
+
+# Negative log10 p-values for the y-axis
+data$log10_pvalue <- -log10(data$padj)
+
+
+# Volcano plot using base R's plot function
+plot(data$log2FoldChange, data$log10_pvalue,
+     pch = 16,                      # Solid points
+     col = data$color,            # Colors based on significance
+     xlab = "Log Fold Change (logFC)",
+     ylab = "-log10 Adjusted P-value",
+     main = "Volcano Plot: Upregulated vs Downregulated",
+     cex = 1.2,                ## Adjust point size
+     xlim = c(2, -2))  # Symmetrical X-axis
+                     
+# Add a legend
+legend("topleft",
+       legend = c("Upregulated", "Downregulated", "Not Significant"),
+       col = c("red", "blue", "gray"),
+       pch = 16)
+
+
+```
+
+
+#Part 4: Subset genes........
+
+
+```{r}
+# Set thresholds for significance
+logFC_cutoff = 1      # Log Fold Change threshold
+pvalue_cutoff = 0.01  # Adjusted p-value threshold
+
+##Subset significantly upregulated genes
+data <- na.omit(data)
+
+upregulated_genes <- data %>%
+  filter(data$log2FoldChange > logFC_cutoff & data$padj < pvalue_cutoff)
+
+##Subset significantly downregulated genes
+
+downregulated_genes <- data %>%
+  filter(data$log2FoldChange < -logFC_cutoff & data$padj < pvalue_cutoff)
+
+```
+
+
+##Print the results
+
+
+```{r}
+print(upregulated_genes)
+print(downregulated_genes)
+```
+
+
+##Save file
+
+
+```{r}
+write.csv(upregulated_genes, "upregulated_genes.csv")
+write.csv(downregulated_genes, "downregulated_genes.csv")
+```
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
