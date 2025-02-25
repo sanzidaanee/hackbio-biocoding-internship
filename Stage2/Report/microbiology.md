@@ -1,7 +1,11 @@
 # Task description
-Task Code 2.1:
 
-Microbiology
+## Task Code 2.1: https://github.com/sanzidaanee/hackbio-biocoding-internship/blob/main/Stage2/Code/microbiology.ipynb
+
+## Video link : https://www.linkedin.com/posts/kazadi-ngoie-45a5901b2_as-part-of-the-hackbio-internship-stage-2-activity-7299441053567213569-3kt4?utm_source=share&utm_medium=member_desktop&rcm=ACoAADGQN4YBzKeiDNJO02AzEWVe51O4XNO2ZKk
+
+
+# Microbiology
 
 Look at this dataset here.
 
