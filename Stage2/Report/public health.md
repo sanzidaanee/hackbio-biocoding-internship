@@ -1,93 +1,77 @@
-# Task description
-Task Code 2.1:
 
-Microbiology
+# Public Health: Analyzing the NHANES Dataset
 
-Look at this dataset here.
+This repository contains a Python notebook (`Stage_2.ipynb`) that analyzes the relationship between the data of participants in the dataset
+# Link
 
-This is the description of the dataset . [open in a new tab, not a file to be downloaded]
+## Code link: https://github.com/sanzidaanee/hackbio-biocoding-internship/blob/main/Stage2/Code/public%20health.ipynb
 
-Plot all the growth curves of OD600 vs Time for the different Strains with the following instructions
+## Video link:  https://www.linkedin.com/posts/bezaleel-akinbami-33a812168_as-part-of-the-hackbio-internship-stage-activity-7299905354031632384-NRBQ?utm_source=share&utm_medium=member_android&rcm=ACoAACf8wF4BNyxqmoNClmfsIz-pzwUKKhCvBUs 
 
-For each strain, plot a growth curve of the the knock out (-) an knock in (+) strain overlaid on top of each other
 
-Using your function from last stage, determine the time to reach the carrying capacity for each strain/mutant
+## Task Description
 
-Generate a scatter plot of the time it takes to reach carrying capacity for the knock out and the knock in strains
+The task involved analyzing the dataset:
 
-Generate a box plot of the time it takes to reach carrying capacity for the knock out and the knock in strains
+* **NHANES Dataset:** Contains data on health and nutritional status of adults and children in the US
 
-Is there a statistical difference in the time it takes the knock out strains to reach their maximum carrying capacity compared to the knock in strains
+The goal was to:
 
-What do you see? Explain your observations as comments in your code
+** Tasks**: 
 
-# Growth Curve Analysis of Different Strains
+** Process all NA (either by deleting or by converting to zero)
 
-This repository contains Python code for analyzing growth curve data of various strains. The project includes data loading, data transformation, visualization, and statistical testing to compare the carrying capacity times of knock-in and knock-out strains.
+** Visualize the distribution of BMI, Weight, Weight in pounds (weight 2.2) and Age with an histogram.
 
-## Overview
+** What's the mean 60-second pulse rate for all participants in the data?
+** What's the range of values for diastolic blood pressure In all participants? 
 
-The analysis involves:
-- Loading a tab-separated values (TSV) file containing growth curve data.
-- Reshaping the data for plotting using Pandas.
-- Visualizing the growth curves with Seaborn and Matplotlib.
-- Calculating the time to reach 95% of maximum OD600 (an indicator of carrying capacity) for each strain.
-- Generating scatter and box plots to compare carrying capacity times.
-- Performing an independent t-test to determine if there is a statistically significant difference between knock-in and knock-out strains.
+** What's the variance and standard devlation for Income among all participants? 
 
-## Repository Structure
+** Visualize the relationship between weight and height? Color by:
+   * Gender
+   * Diabetes
+   * smoking status 
 
-```
-├── README.md
-├── analysis.ipynb          # Jupyter Notebook containing the full analysis
-└── requirements.txt        # List of dependencies (if applicable)
-```
+** Conduct t-test between the following variables and make conclusions on the relationship between them based on P-Value 
+   * Age and Gender
+   * BMI and Dlabetes
+   * Alcohol Year and Relationship Status
 
-## Usage
 
-1. **Clone the repository:**
+## Files
 
-   ```bash
-   git clone https://https://github.com/kazadingoie/hackbio-biocoding-internship
-   ```
+* `Stage_2.ipynb`: Jupyter Notebook containing the Python code for the analysis.
+* `NHANES Dataset`:https://raw.githubusercontent.com/HackBio-Internship/public_datasets/main/R/nhanes.csv
 
-2. **Install Dependencies:**
 
-   If you are using `pip`, you can install the required packages by running:
+## Dependencies
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+The following Python libraries are required to run the notebook:
 
-   The project requires:
-   - pandas
-   - matplotlib
-   - seaborn
-   - numpy
-   - scipy
+* `pandas`
+* `matplotlib`
+* 'seaborn'
+  
 
-3. **Run the Analysis:**
+You can install these libraries using pip
 
-   You can open the Jupyter Notebook (`analysis.ipynb`) in Google Colab or your local Jupyter environment to run and explore the analysis.
+## Results
+The notebook provides:
 
-## Data Source
+* Dropped the NA values.
+* Visualized the distribution of BMI, Weight, Weight in punds and age on a Histogram.
+* Calculated the mean of the 60-second pulse rate.
+* Displayed the min and max Diastolic blood pressure
+* Calculated the varianve and standard deviation of the income of participants
+* Visualized the relationship between weight and height, and color coded by gender, diabetes, and smoking status on scatterplots
+* Conducted a t-test to find out the relationship between age and gender, BMI and diabetes, alcohol year and relationship status based on the P-value
 
-The data is read directly from a GitHub-hosted TSV file:
-```
-https://raw.githubusercontent.com/HackBio-Internship/2025_project_collection/refs/heads/main/Python/Dataset/mcgc.tsv
-```
+## Author
 
-Ensure that the file exists at the specified URL. If the file location changes, update the `data_source` URL in the code accordingly.
+* Bezaleel Akinbami(@Bez) 
 
-## Code Overview
-
-- **Data Loading:** The script reads the TSV file using Pandas with tab separation.
-- **Data Reshaping:** The data is transformed from a wide to a long format using the `melt` function for easier plotting.
-- **Visualization:** Growth curves, scatter plots, and box plots are generated using Seaborn and Matplotlib.
-- **Statistical Testing:** An independent t-test is performed to compare the carrying capacity times of knock-in and knock-out strains.
-
-## Observations
-
-- The scatter and box plots help visualize the variation in carrying capacity times among different strains.
-- The t-test indicates whether the observed differences are statistically significant.
-- In the provided example, there was no significant difference in carrying capacity time between the knock-out and knock-in strains.
+## Acknowledgements
+* CDC for the dataset.
+* My team members
+* HackBio for the task.
